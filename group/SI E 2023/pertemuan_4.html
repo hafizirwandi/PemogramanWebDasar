@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Tag List</h2>
+    <h3>Bahasa Pemograman</h3>
+    <p>
+        1. Java <br>
+        2. C++ <br>
+        3. Python <br>
+        4. JavaScript <br>
+        5. PHP <br>
+    </p>
+    <!-- Ordinared List -->
+    <ol type="i">
+        <li>Java</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <ul type="none">
+        <li>Java</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+    </ul>
+
+    <h2>Tag Table</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th width="100">No. Invoice</th>
+                <th width="100">Item</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>INV-01</b></td>
+                <td>Item A</td>
+                <td>2</td>
+                <td>$10</td>
+                <td rowspan="2">$20</td>
+            </tr>
+            <tr>
+                <td>INV-02</td>
+                <td>Item B</td>
+                <td>1</td>
+                <td>$15</td>
+               
+            </tr>
+            <tr>
+                <td>INV-03</td>
+                <td>Item C</td>
+                <td>3</td>
+                <td>$5</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>INV-04</td>
+                <td>Item D</td>
+                <td>4</td>
+                <td>$7</td>
+                <td>$28</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+               
+                <td>10</td>
+                <td>$78</td>
+                <td>$100</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <h2>Tag Form</h2>
+    <h3>Form Pendaftaran Mahasiswa baru</h3>
+    <table cellpadding="5">
+    <form action="">
+        <tr>
+            <td>
+                  <label for="">Nama</label>
+            </td>
+            <td>
+                 <input type="text" name="nama"  placeholder="Enter Text" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">NIM/NPM</label>
+            </td>
+            <td>
+                <input type="number" name="nim" placeholder="Enter Number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Jenis Kelamin</label>
+            </td>
+            <td>
+                <input type="radio" name="jk" value="Laki-laki"> Laki-laki <br>
+                <input type="radio" name="jk" value="Perempuan"> Perempuan
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Agama</label>
+            </td>
+            <td>
+                <select name="agama" >
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Alamat</label>
+            </td>
+            <td>
+                <textarea name="alamat" id="" ></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Hobi</label>
+            </td>
+            <td>
+                <input type="checkbox" name="hobi" value="Olahraga"> Olahraga <br>
+                <input type="checkbox" name="hobi" value="Membaca"> Membaca <br>
+                <input type="checkbox" name="hobi" value="Menulis"> Menulis
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Tgl Lahir</label>
+            </td>
+            <td>
+                <input type="date" name="tgl_lahir" id="">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">No. HP</label>
+            </td>
+            <td>
+                <input type="tel" name="no_hp" id="">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Email</label>
+            </td>
+            <td>
+                <input type="email" name="email" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Password</label>
+            </td>
+            <td>
+                <input type="password" name="password" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Warna kesukaan</label>
+            </td>
+            <td>
+                <input type="color" name="warna" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Upload File</label>
+            </td>
+            <td>
+                <input type="file" name="file" accept="image/*" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Facebook</label>
+            </td>
+            <td>
+                <input type="url" name="fb" placeholder="https://www.facebook.com/">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button type="submit">Simpan</button>
+            </td>
+        </tr>
+      
+        
+    </form>
+
+    </table>
+
+
+</body>
+</html>
