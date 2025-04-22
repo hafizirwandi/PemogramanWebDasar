@@ -1,0 +1,53 @@
+p{
+    color: red;
+    font-size: 20pt;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 150px;
+}
+.text-orange{
+    color : orange
+}
+#judul{
+    color: blue;
+    font-size: 30pt;
+    font-weight: 900;
+    text-align: center;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    border: 1px dashed black;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-left:20px ;
+}
+.title{
+   
+    font-size: 20pt;
+    font-weight: 900;
+   
+   
+}
+
+/* h1{
+    color: blue;
+    font-size: 30pt;
+    font-weight: 900;
+    text-align: center;
+}
+h2{
+    color: green;
+    font-size: 25pt;
+    font-weight: 900;
+    text-align: center;
+}
+h3{
+    color: yellow;
+    font-size: 20pt;
+    font-weight: 900;
+    text-align: center;
+} */
