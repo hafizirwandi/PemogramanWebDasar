@@ -1,0 +1,106 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #ddd;
+  color: #333;
+}
+
+/* Grid layout for main content */
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Content and Sidebar */
+.content {
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+.sidebar {
+  background: #e0e0e0;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* ========================= */
+/* Responsive Media Queries  */
+/* ========================= */
+
+/* Desktop Large Screen */
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+/* Tablet Devices (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  main {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile Devices (0px - 767px) */
+@media (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 10px;
+    border-top: 1px solid #444;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 kolom sama rata */
+  grid-template-rows: auto;
+  gap: 10px; /* jarak antar grid */
+}
+
+.grid-item {
+  background-color: peachpuff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.item2{
+  background: lightblue;
+  padding: 20px;
+}
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item">A</div>
+  <div class="grid-item">B</div>
+  <div class="grid-item">C</div>
+  <div class="grid-item">D</div>
+</div>
+
+
+<div class="container2">
+  <div class="item2">Kiri (Lebih besar)</div>
+  <div class="item2">Kanan (Lebih kecil)</div>
+  <div class="item2">Kanan (Lebih kecil)</div>
+  <div class="item2">Kanan (Lebih kecil)</div>
+</div>
+
+
+</body>
+</html>
