@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "Batman";
+        src: url("../../assets/font/batman_forever/batmfa__.ttf");
+      }
+      body {
+        background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+      }
+      .kotak {
+        width: 400px;
+        border-radius: 20px;
+        height: 90vh;
+        background-color: rgba(202, 143, 67, 0.771);
+        margin: auto;
+        padding: 20px;
+      }
+      .judul-menu {
+        text-align: center;
+        font-size: 20pt;
+        font-family: "Batman";
+      }
+      .harga {
+        text-align: right;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak">
+      <div class="judul-menu">Menu</div>
+      <hr />
+
+      <table cellpadding="5" width="100%">
+        <tr>
+          <td width="50%">Cappucino</td>
+          <td width="50%"><div class="harga">Rp.12.000</div></td>
+        </tr>
+        <tr>
+          <td>Coffe Latte</td>
+          <td><div class="harga">Rp.12.000</div></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
