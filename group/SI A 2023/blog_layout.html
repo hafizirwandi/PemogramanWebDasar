@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        background-color: brown;
+        height: 100px;
+        border-radius: 20px;
+        box-shadow: 5px 10px 20px rgb(184, 183, 183);
+      }
+      .container {
+        display: flex;
+        margin-top: 10px;
+        gap: 10px;
+      }
+      .main-content {
+        flex: 7;
+        /* height: 100vh; */
+
+        /* background-color: brown; */
+        box-shadow: 5px 10px 20px rgb(184, 183, 183);
+        border-radius: 20px;
+        padding: 10px;
+
+        /* margin-right: 10px; */
+      }
+      .sidebar {
+        flex: 3;
+        height: 100vh;
+        background-image: url("../../assets/img/bg-menu.jpg");
+        background-position: center top;
+        background-size: cover;
+        /* background-color: brown; */
+        box-shadow: 5px 10px 20px rgb(184, 183, 183);
+        border-radius: 20px;
+      }
+      .img-preview img {
+        width: 250px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgb(184, 183, 183);
+      }
+      .main-content article {
+        display: flex;
+        margin: 10px 0;
+      }
+      .main-content article .article {
+        padding: 0 10px;
+      }
+      .main-content article .article .title-article {
+        font-size: 15pt;
+        font-weight: 800;
+      }
+      .main-content article .article .text-preview {
+        text-align: justify;
+        color: rgb(63, 63, 63);
+      }
+      .article-readmore {
+        background-color: brown;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px rgb(184, 183, 183);
+        padding: 5px 10px;
+        text-decoration: none;
+      }
+      .article-readmore:hover {
+        background-color: rgb(215, 120, 120);
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <div class="main-content">
+        <h1>Blogs</h1>
+        <article>
+          <div class="img-preview">
+            <img src="../../assets/img/bg-kue-basah.jpg" alt="" />
+          </div>
+          <div class="article">
+            <div class="title-article">Kue Basah</div>
+            <p class="text-preview">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+              facilis eaque quaerat voluptatum nisi perferendis aspernatur
+              magnam nulla sequi, earum quae incidunt, natus iusto magni hic.
+              Quisquam eum voluptatibus consequatur?
+            </p>
+            <a href="" class="article-readmore">Read More..</a>
+          </div>
+        </article>
+        <article>
+          <div class="img-preview">
+            <img src="../../assets/img/bg-kue-basah.jpg" alt="" />
+          </div>
+          <div class="article">
+            <div class="title-article">Kue Basah</div>
+            <p class="text-preview">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+              facilis eaque quaerat voluptatum nisi perferendis aspernatur
+              magnam nulla sequi, earum quae incidunt, natus iusto magni hic.
+              Quisquam eum voluptatibus consequatur?
+            </p>
+            <a href="" class="article-readmore">Read More..</a>
+          </div>
+        </article>
+        <article>
+          <div class="img-preview">
+            <img src="../../assets/img/bg-kue-basah.jpg" alt="" />
+          </div>
+          <div class="article">
+            <div class="title-article">Kue Basah</div>
+            <p class="text-preview">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+              facilis eaque quaerat voluptatum nisi perferendis aspernatur
+              magnam nulla sequi, earum quae incidunt, natus iusto magni hic.
+              Quisquam eum voluptatibus consequatur?
+            </p>
+            <a href="" class="article-readmore">Read More..</a>
+          </div>
+        </article>
+        <article>
+          <div class="img-preview">
+            <img src="../../assets/img/bg-kue-basah.jpg" alt="" />
+          </div>
+          <div class="article">
+            <div class="title-article">Kue Basah</div>
+            <p class="text-preview">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+              facilis eaque quaerat voluptatum nisi perferendis aspernatur
+              magnam nulla sequi, earum quae incidunt, natus iusto magni hic.
+              Quisquam eum voluptatibus consequatur?
+            </p>
+            <a href="" class="article-readmore">Read More..</a>
+          </div>
+        </article>
+      </div>
+      <div class="sidebar"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      header {
+        width: inherit;
+        height: 70px;
+        background-color: #5c5a5a;
+        border-radius: 10px;
+        /* padding-left: 10px; */
+      }
+      header .title-header {
+        color: #fff;
+        font-size: 20pt;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+      .main-article {
+        flex: 7;
+      }
+      .sidebar-article {
+        flex: 3;
+        background-color: #5c5a5a;
+        height: 80vh;
+        border-radius: 10px;
+      }
+      .main-article .img-article {
+        width: 300px;
+        border-radius: 10px;
+      }
+      .main-article article {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+      .main-article .preview-article {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .main-article .preview-article p {
+        text-align: justify;
+      }
+      h4,
+      h5,
+      p {
+        margin: 0px;
+      }
+
+      .btn-readmore {
+        background-color: #8a2be2;
+        padding: 10px;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+      }
+      .btn-readmore:hover {
+        background-color: #a461e2;
+      }
+      @media screen and (max-width: 767px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h5 class="title-header">Ini adalah Header</h5>
+      </header>
+      <div class="flex-container">
+        <div class="main-article">
+          <article>
+            <img
+              class="img-article"
+              src="../../assets/img/bg-kue-basah.jpg"
+              alt="" />
+            <div class="preview-article">
+              <h4>Kue Basah</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat culpa, omnis, tempore aut voluptatem suscipit ipsam hic
+                aliquam perferendis, sint ex adipisci tempora eum et unde sed
+                dolorum atque nemo.
+              </p>
+              <button class="btn-readmore">Read more ...</button>
+            </div>
+          </article>
+          <article>
+            <img
+              class="img-article"
+              src="../../assets/img/bg-kue-basah.jpg"
+              alt="" />
+            <div class="preview-article">
+              <h4>Kue Basah</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat culpa, omnis, tempore aut voluptatem suscipit ipsam hic
+                aliquam perferendis, sint ex adipisci tempora eum et unde sed
+                dolorum atque nemo.
+              </p>
+              <button class="btn-readmore">Read more ...</button>
+            </div>
+          </article>
+        </div>
+        <div class="sidebar-article"></div>
+      </div>
+    </div>
+  </body>
+</html>

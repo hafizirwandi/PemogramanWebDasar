@@ -1,0 +1,64 @@
+/* div {
+  color: red;
+  font-weight: 900;
+  text-decoration: underline;
+  background-color: aquamarine;
+} */
+
+@font-face {
+  font-family: "Foodcan";
+  src: url("../../assets/font/foodcan/FOODCAN\ PERSONAL\ USE.ttf");
+}
+h1 {
+  color: green;
+  text-align: center;
+}
+h2 {
+  color: burlywood;
+  text-align: right;
+}
+.box {
+  width: 400px;
+  height: 500px;
+  border: 10px solid #000;
+  background-color: blueviolet;
+  margin-left: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.box:hover {
+  background-color: orange;
+}
+.inner-box {
+  color: white;
+  text-align: justify;
+  font-size: 11pt;
+  font-family: "Foodcan";
+
+  /* margin-left: 20px; */
+}
+#latihan {
+  color: yellow;
+}
+
+h4 {
+  color: red;
+}
+.class-h4 {
+  color: blue;
+}
+#id-h4 {
+  color: blueviolet;
+}
+
+li:first-child {
+  color: blueviolet;
+}
+li:last-child {
+  color: red;
+}
+li::before {
+  content: "icon";
+}
