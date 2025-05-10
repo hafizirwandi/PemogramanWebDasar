@@ -10,6 +10,8 @@
         height: 100px;
         border-radius: 20px;
         box-shadow: 5px 10px 20px rgb(184, 183, 183);
+        padding: 5px 10px;
+        display: flex;
       }
       .container {
         display: flex;
@@ -68,10 +70,63 @@
       .article-readmore:hover {
         background-color: rgb(215, 120, 120);
       }
+
+      .logo {
+        flex: 2;
+      }
+      .logo img {
+        width: 70px;
+        margin: auto;
+      }
+      .menu {
+        flex: 8;
+        align-content: flex-start;
+      }
+      .menu ul {
+        display: flex;
+        gap: 10px;
+      }
+      .menu ul li {
+        text-decoration: none;
+        list-style: none;
+        /* border: 1px solid #000; */
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+      .menu ul li.active a {
+        background-color: orange;
+        color: rgb(255, 255, 255);
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+      .menu ul li a {
+        font-size: 16pt;
+        text-decoration: none;
+        color: #000;
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+      .menu ul li a:hover {
+        background-color: orange;
+        color: #fff;
+      }
     </style>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="logo">
+        <img src="../../assets/img/umsu.webp" alt="" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Galeri</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Profile</a></li>
+        </ul>
+      </div>
+    </header>
     <div class="container">
       <div class="main-content">
         <h1>Blogs</h1>
