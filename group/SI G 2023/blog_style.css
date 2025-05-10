@@ -1,0 +1,125 @@
+header {
+  width: inherit;
+  height: 100px;
+  background-color: brown;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px grey;
+  display: flex;
+  padding: 5px 20px;
+  align-content: center;
+}
+.logo img {
+  width: 70px;
+  margin-right: 50px;
+}
+
+ul.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-end;
+}
+ul.menu li {
+  list-style-type: none;
+  color: #fff;
+  font-size: 14pt;
+}
+
+ul.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+ul.menu li a:hover {
+  color: #1a1818;
+}
+
+.container {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+.main-content {
+  flex: 7;
+  /* background-color: brown; */
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px grey;
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+  padding: 20px 30px;
+}
+.sidebar {
+  flex: 3;
+  /* background-color: brown; */
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px grey;
+  height: 30vh;
+  overflow-y: scroll;
+  padding: 10px;
+  font-size: 10pt;
+}
+h1.title-page {
+  font-size: 20pt;
+}
+.blog-img-thumbnail img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px grey;
+}
+article {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.blog-description {
+  padding: 0px 10px;
+  margin-left: 10px;
+}
+.blog-title {
+  margin-bottom: 15px;
+  font-family: Verdana;
+  font-size: 13pt;
+  font-weight: 700;
+}
+.blog-text {
+  text-align: justify;
+  color: rgb(69, 69, 69);
+  font-size: 10pt;
+  margin-bottom: 20px;
+}
+.btn-readmore {
+  background-color: blueviolet;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px grey;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 10pt;
+}
+.btn-readmore:hover {
+  background-color: rgb(181, 131, 228);
+}
+
+ul.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+li.pagination-item {
+  list-style-type: none;
+  background-color: rgb(239, 9, 239);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  align-content: center;
+  border-radius: 5px;
+  box-shadow: 5px 10px 20px grey;
+  font-size: 10pt;
+}
+li.pagination-item a {
+  text-decoration: none;
+  color: #fff;
+}
+li.pagination-item:hover {
+  background-color: rgb(238, 124, 238);
+}
