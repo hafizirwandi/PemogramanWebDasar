@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet" />
+    <style>
+      body {
+        /* background-color: blueviolet; */
+        background-image: url("../../assets/img/wallpaperbetter.com_1366x768.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .box-login {
+        width: 400px;
+        /* height: 400px; */
+        /* background-color: #fff; */
+        background: transparent;
+        backdrop-filter: blur(30px);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        margin: auto;
+        margin-top: 100px;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #ffffff7c;
+      }
+      .login-text {
+        text-align: center;
+        font-weight: 900;
+        font-size: 40px;
+        margin-bottom: 30px;
+        color: #fff;
+      }
+      .input-group {
+        width: 100%;
+        height: 60px;
+        /* background-color: aqua; */
+        margin-bottom: 20px;
+        display: flex;
+        position: relative;
+      }
+      .input-group input {
+        width: 100%;
+        border-radius: 40px;
+        padding-left: 20px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        color: #fff;
+        font-size: 15px;
+      }
+      .input-group input::placeholder {
+        color: #fff;
+        font-size: 15px;
+      }
+      .input-group i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 15px;
+      }
+      .d-flex {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+      }
+      .d-flex .remember-me {
+        display: flex;
+        align-items: center;
+        color: #fff;
+      }
+      .d-flex a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 900;
+      }
+      .d-flex .remember-me input {
+        width: 10px;
+      }
+      .btn-login {
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 40px;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: 900;
+        border: none;
+        outline: none;
+      }
+      .info-register {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+        color: #fff;
+      }
+      .info-register a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-login">
+      <div class="login-text">Login</div>
+      <form action="">
+        <div class="input-group">
+          <input type="text" name="" placeholder="username" />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-group">
+          <input type="password" name="" placeholder="password" />
+          <i class="bx bxs-lock"></i>
+        </div>
+        <div class="d-flex">
+          <div class="remember-me">
+            <input type="checkbox" name="" id="" />
+            <span>Remember me</span>
+          </div>
+
+          <a href="">Forgot Password</a>
+        </div>
+
+        <button class="btn-login">Login</button>
+        <div class="info-register">
+          Don't have an account? <a href="">Register</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

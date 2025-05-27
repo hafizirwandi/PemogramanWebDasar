@@ -5,73 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-  </head>
-  <body style="background-color: #1abc9d">
-    <div
-      style="
-        background-color: #fff;
-        border-radius: 5px;
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: "Poppins";
+        background-image: url("../../assets/img/wallpaperbetter.com_1366x768.jpg");
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+        height: 100vh;
+        backdrop-filter: opacity(100%);
+        margin: 0;
+      }
+      .wrapper {
         width: 300px;
-        box-shadow: 5px 10px 20px rgb(195, 195, 195);
-        margin: auto;
-        margin-top: 50px;
-      ">
-      <div
-        style="
-          background-color: #159f83;
-          /* height: 50px; */
-          border-top-right-radius: 5px;
-          border-top-left-radius: 5px;
-          padding: 20px;
-        ">
-        <div
-          style="
-            /* border: 1px solid #000; */
-            text-align: center;
-            color: #fff;
-            font-weight: 900;
-          ">
-          Login Form
-        </div>
-      </div>
+
+        background: transparent;
+        border: 1px solid rgba(225, 225, 225, 0.2);
+        padding: 40px 30px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px rgba(225, 225, 225, 0.2);
+      }
+
+      .wrapper .input-group {
+        height: 50px;
+        /* background-color: aqua; */
+        /* border: 1px solid #000; */
+        margin: 20px 0;
+        position: relative;
+        display: flex;
+        width: 100%;
+      }
+      .wrapper .input-group input {
+        border: none;
+        outline: none;
+        border: 2px solid rgba(225, 225, 225, 0.2);
+        border-radius: 40px;
+        width: 100%;
+        padding: 0 20px;
+        background: transparent;
+        color: #fff;
+      }
+      .wrapper .input-group input:focus {
+        box-shadow: 0 0 20px #fff;
+      }
+      .wrapper .input-group input::placeholder {
+        color: #fff;
+      }
+      .wrapper .input-group i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+      }
+      .wrapper .info {
+        display: flex;
+        justify-content: space-between;
+      }
+      .wrapper .info .remember-me {
+        display: flex;
+        align-items: center;
+      }
+      .wrapper .info .remember-me input {
+        width: 10px;
+      }
+      .wrapper .info .remember-me span {
+        color: #fff;
+        font-size: 12px;
+      }
+
+      .wrapper .info a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 12px;
+      }
+      .wrapper button {
+        width: 100%;
+        border-radius: 40px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 15px;
+        margin-top: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      .wrapper button:hover {
+        box-shadow: 0 0 20px #fff;
+      }
+
+      .info-2 {
+        color: #fff;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 10px;
+      }
+      .info-2 a {
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
       <form action="">
-        <div
-          style="
-            border: 1px solid #000;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            padding: 20px;
-          ">
-          <div style="display: flex">
-            <div
-              style="
-                background-color: #159f83;
-                padding: 5px;
-                color: #fff;
-                border-top-left-radius: 3px;
-                border-bottom-left-radius: 3px;
-              ">
-              <i class="fa-solid fa-user"></i>
-            </div>
+        <div class="input-group">
+          <input type="text" name="" placeholder="username" />
+          <i class="bx bx-user"></i>
+        </div>
+        <div class="input-group">
+          <input type="text" name="" placeholder="password" />
+          <i class="bx bx-lock"></i>
+        </div>
 
-            <input
-              type="text"
-              name=""
-              placeholder="Email or Phone"
-              style="
-                border-top-left-radius: 0px;
-                border-bottom-left-radius: 0px;
-                width: 100%;
-              " />
+        <div class="info">
+          <div class="remember-me">
+            <input type="checkbox" name="" id="" />
+            <span>Rememer me</span>
           </div>
-
-          <input type="password" name="" placeholder="Password" />
+          <a href="">Forgot password ? </a>
+        </div>
+        <button>Login</button>
+        <div class="info-2">
+          Don't have an account ? <a href="">Register</a>
         </div>
       </form>
     </div>
