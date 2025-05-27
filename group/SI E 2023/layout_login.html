@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #7dbb5c;
+      }
+      .box-login {
+        width: 300px;
+
+        background-color: #fff;
+        box-shadow: 5px 10px 20px rgb(94, 94, 94);
+        padding: 40px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 5px;
+      }
+      .input-form {
+        background-color: #f2f2f2;
+        border: none;
+        outline: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        color: rgb(179, 178, 178);
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .btn-login {
+        background-color: #7dbb5c;
+        color: #fff;
+        padding: 20px;
+        border: none;
+        outline: none;
+      }
+      .footer-login {
+        text-align: center;
+        margin-top: 20px;
+        color: rgb(179, 178, 178);
+      }
+      a {
+        color: #7dbb5c;
+        text-decoration: none;
+      }
+      .btn-login:hover {
+        background-color: #3f9312;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-login">
+      <form action="">
+        <input
+          type="text"
+          name="username"
+          placeholder="username"
+          class="input-form" />
+        <input
+          type="text"
+          name="password"
+          placeholder="password"
+          class="input-form" />
+        <button class="btn-login">Login</button>
+      </form>
+      <div class="footer-login">
+        not registered ? <a href="">create an account!</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Input Group Manual</title>
+    <style>
+      .form-label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+      }
+
+      .input-group {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        overflow: hidden;
+        max-width: 300px;
+      }
+
+      .input-group span {
+        background-color: #eee;
+        padding: 10px 12px;
+        border-right: 1px solid #ccc;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+
+      .input-group input {
+        flex: 1;
+        padding: 10px 12px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+      }
+
+      .input-group input::placeholder {
+        color: #aaa;
+      }
+
+      /* Optional: hover and focus effects */
+      .input-group:focus-within {
+        border-color: #007bff;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+      }
+    </style>
+  </head>
+  <body>
+    <label class="form-label">Nomor Telepon</label>
+    <div class="input-group">
+      <span>+62</span>
+      <input type="text" placeholder="8123456789" />
+    </div>
+  </body>
+</html>

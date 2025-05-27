@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #7ebb5d;
+        /* padding-left: 100px; */
+      }
+      .kotak {
+        background-color: #fff;
+        width: 200px;
+
+        /* padding-left: 10px; */
+        margin: auto;
+        box-shadow: 5px 10px 20px rgb(145, 145, 145);
+        margin-top: 50px;
+        padding: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .input {
+        background-color: #f2f2f2;
+        height: 30px;
+        border: none;
+        outline: none;
+        padding-left: 15px;
+        font-size: 10px;
+      }
+      button {
+        background-color: #53af50;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+      }
+      .footer {
+        font-size: 10px;
+        color: #9f9e9e;
+        text-align: center;
+        margin-top: 20px;
+      }
+      a {
+        color: #53af50;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak">
+      <form action="">
+        <input type="text" placeholder="username" class="input" />
+        <input type="password" placeholder="password" class="input" />
+        <button type="submit">LOGIN</button>
+      </form>
+      <div class="footer">Not Registered ?<a href="">Create an account</a></div>
+    </div>
+  </body>
+</html>

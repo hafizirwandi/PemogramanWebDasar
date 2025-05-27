@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .box {
+        width: 200px;
+        background-color: aqua;
+        height: 200px;
+      }
+      .box-responsive {
+        width: 50%;
+        background-color: rgb(255, 0, 234);
+        height: 20vh;
+      }
+      .parent-box {
+        width: 200px;
+        border: 1px solid #000;
+      }
+      .font-responsive {
+        font-size: 30px;
+      }
+      /* mobile */
+      @media (max-width: 768px) {
+        .font-responsive {
+          font-size: 20px;
+        }
+      }
+      @media (max-width: 480px) {
+        .font-responsive {
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="font-responsive">Ini adalah font responsive</div>
+    <p>Ini adalah font dgn ukuran 16px</p>
+
+    <h1>ini adalah font rem 1.5rem</h1>
+    <div class="box"></div>
+    <div class="parent-box">
+      <div class="box-responsive"></div>
+    </div>
+  </body>
+</html>

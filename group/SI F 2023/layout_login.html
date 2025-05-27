@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <style>
+      body {
+        background-color: #1bbc9c;
+      }
+      .kotak-putih {
+        background-color: #fff;
+        padding-top: 20px;
+        padding: 20px;
+      }
+      .kotak-hijau {
+        background-color: #159f83;
+        width: 100%;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .text-login-form {
+        color: #fff;
+        font-size: 35px;
+        text-align: center;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      .icon-form {
+        background-color: #159f83;
+        padding: 15px;
+        /* flex: 1; */
+
+        color: #fff;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      .input-form {
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        width: 100%;
+        /* flex: 12; */
+      }
+      .kotak-login {
+        /* border: 1px solid #000; */
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 100px;
+      }
+      button {
+        background-color: #159f83;
+        color: #fff;
+        padding: 15px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        margin-top: 30px;
+      }
+      a {
+        color: #159f83;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak-login">
+      <div class="kotak-hijau">
+        <div class="text-login-form">Login Form</div>
+      </div>
+      <div class="kotak-putih">
+        <form action="">
+          <div class="form-group">
+            <span class="icon-form"><i class="fa fa-user"></i></span>
+            <input
+              type="text"
+              name=""
+              placeholder="Email Or Phone"
+              class="input-form" />
+          </div>
+          <div class="form-group">
+            <span class="icon-form"><i class="fa fa-lock"></i></span>
+            <input
+              type="password"
+              name=""
+              placeholder="Password"
+              class="input-form" />
+          </div>
+        </form>
+
+        <a href="">Forgot Password ?</a>
+        <br />
+        <button>Login</button>
+
+        <div style="text-align: center">
+          Not a member ? <a href="">Signup Now</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

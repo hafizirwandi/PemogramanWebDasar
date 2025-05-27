@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Halaman Grid</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "sidebar main"
+          "footer footer";
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+      }
+
+      header {
+        grid-area: header;
+        background-color: #4caf50;
+        color: white;
+        padding: 1em;
+        text-align: center;
+      }
+
+      aside {
+        grid-area: sidebar;
+        background-color: #f4f4f4;
+        padding: 1em;
+      }
+
+      main {
+        grid-area: main;
+        padding: 1em;
+        background-color: #fff;
+      }
+
+      footer {
+        grid-area: footer;
+        background-color: #ddd;
+        text-align: center;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <h1>Judul Halaman</h1>
+      </header>
+
+      <aside>
+        <h2>Sidebar</h2>
+        <ul>
+          <li>Menu 1</li>
+          <li>Menu 2</li>
+          <li>Menu 3</li>
+        </ul>
+      </aside>
+
+      <main>
+        <h2>Konten Utama</h2>
+        <p>Ini adalah area utama tempat konten ditampilkan.</p>
+      </main>
+
+      <footer>&copy; 2025 Hak Cipta Anda</footer>
+    </div>
+  </body>
+</html>
