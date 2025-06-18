@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let angka = [4, 7, 1, 9, 2, 5];
+      let buah = ["apel", "jeruk", "mangga", "apel", "pisan"];
+      //Tampilkan semua item di array buah dengan format:Buah ke-1 adalah apelBuah ke-2 adalah jeruk
+      //   buah.forEach((item, index) => {
+      //     console.log("buah ke-" + index + "adalah " + item);
+      //   });
+
+      //   buah.forEach(function (item, index) {
+      //     const val = `Buah ke-${index + 1} adalah ${item}`;
+      //     return console.log(val);
+      //   });
+
+      //   buah.forEach((item, index) => {
+      //     console.log("buah ke-" + index + "adalah " + item);
+      //   });
+
+      //   Buat array baru dari angka yang isinya angka kuadrat dari setiap elemen (misal 4 → 16).
+
+      //   const newArray = [];
+      //   angka.forEach((item) => {
+      //     const hasil = item * item;
+      //     newArray.push(hasil);
+      //   });
+
+      //   console.log(newArray);
+      //   const newArray = angka.map((item) => item * item);
+
+      //   console.log(newArray);
+
+      //   Ambil semua angka ganjil dari array angka ke array baru.
+      //   let newArray = [];
+      //   angka.forEach((item) => {
+      //     if (item % 2 != 0) {
+      //       newArray.push(item);
+      //     }
+      //   });
+      //   console.log(newArray);
+      //   let newArray = angka.filter((item) => item % 2 != 0);
+      //   console.log(newArray);
+      //   Temukan angka pertama di angka yang lebih besar dari 5.
+
+      //   let newArray = angka.find((item) => item > 5);
+      //   console.log(newArray);
+
+      //   console.log(buah.includes("apel"));
+
+      // Dari array angka, ambil angka yang lebih besar dari 3 dan kalikan semua angka itu dengan 2, simpan di array baru.
+
+      //   let newArray = angka
+      //     .filter((x) => x > 3)
+      //     .map((x) => x * 2)
+      //     .reduce((a, b) => a + b);
+      //   console.log(newArray);
+
+      let mobil = {
+        merek: "Toyota",
+        warna: "Hitam",
+        tahun: 2023,
+        stnk: {
+          nomorPolisi: "BK1892P",
+          nomorMesin: "jkajsd093023j",
+          nomorRangka: "8923jkjsd",
+        },
+        info: function () {
+          return `Mobil ${this.merek} , bewarna ${this.warna}`;
+        },
+      };
+
+      console.log(mobil.info());
+    </script>
+  </body>
+</html>

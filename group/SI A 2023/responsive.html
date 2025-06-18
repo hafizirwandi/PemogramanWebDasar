@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100%;
+        /* height: 300px; */
+        /* background-color: black; */
+        border: 1px solid black;
+      }
+      h1 {
+        text-align: center;
+        font-size: 25px;
+      }
+      .section img {
+        width: 300px;
+      }
+      .section {
+        display: flex;
+        flex-direction: row;
+      }
+
+      @media (max-width: 480px) {
+        .section {
+          flex-direction: column;
+        }
+        .section img {
+          width: 100%;
+        }
+        h1 {
+          font-size: 20px;
+        }
+      }
+      @media (max-width: 768px) {
+        .section p {
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Belajar Website Responsive</h1>
+      <div class="section">
+        <img src="../../assets/img/bg-kue-basah.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+          accusamus reprehenderit dolores quibusdam veritatis deserunt optio
+          pariatur soluta obcaecati eveniet minus officia ratione temporibus
+          sit, in ad velit ut autem!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

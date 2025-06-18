@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0 20px;
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        /* height: 200px; */
+        background-color: salmon;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+      .container img {
+        width: 200px;
+      }
+      p {
+        color: #fff;
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 391px) {
+        .container {
+          width: 100%;
+          flex-direction: column;
+        }
+        .container img {
+          width: 100% !important;
+        }
+      }
+      @media (max-width: 769px) {
+        .container img {
+          width: 350px;
+        }
+        .container p {
+          font-size: 15pt;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cara membuat website responsive -->
+    <!-- Gunakan satuan relatif untuk layout (%, vw, vh) -->
+    <!-- Untuk font gunakan satuan relatif (rem, em) -->
+    <!-- Gunakan @media untuk layout -->
+    <!-- @media adalah sebuah sintaks pada css yang memungkinkan kita memberikan kondisi -->
+    <div class="container">
+      <img src="../../assets/img/bg-kue-basah.jpg" alt="" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sed
+        ipsum sint suscipit, ullam error velit voluptas soluta odio eaque enim
+        voluptates obcaecati at culpa, perspiciatis aliquid voluptatibus fugit
+        magnam?
+      </p>
+    </div>
+  </body>
+</html>

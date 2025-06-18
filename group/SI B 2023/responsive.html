@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 80%;
+        margin: auto;
+        background-color: blueviolet;
+        /* height: 300px; */
+        color: #fff;
+        font-size: 50px;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+        /* vertical-align: top; */
+      }
+
+      .img {
+        width: 50%;
+      }
+      p {
+        width: 50%;
+        text-align: left;
+        padding: 20px;
+      }
+
+      @media (max-width: 480px) {
+        .box {
+          font-size: 10px;
+          width: 100%;
+          flex-direction: column;
+          background-color: red;
+        }
+        .img {
+          width: 100%;
+        }
+        p {
+          width: 100%;
+          font-size: 1.5rem;
+        }
+      }
+      @media (max-width: 768px) {
+        .box {
+          font-size: 30px;
+          width: 100%;
+          flex-direction: column;
+        }
+        .img {
+          width: 100%;
+        }
+        p {
+          width: 100%;
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="img">
+        <img width="100%" src="../../assets/img/bg-kue-basah.jpg" alt="" />
+      </div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        possimus, placeat velit odit, quia eaque consequuntur dolorem porro
+        voluptates repellendus ducimus, incidunt ipsa voluptatem ab voluptate
+        delectus pariatur laudantium perferendis!
+      </p>
+    </div>
+  </body>
+</html>

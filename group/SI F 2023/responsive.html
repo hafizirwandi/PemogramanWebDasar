@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        font-size: 2.5rem;
+      }
+      .box {
+        width: 100%;
+        background-color: limegreen;
+
+        display: flex;
+        flex-direction: row;
+      }
+      .box img {
+        width: 50%;
+      }
+      .box p {
+        width: 50%;
+      }
+      @media (max-width: 768px) {
+        .box {
+          width: 100%;
+        }
+      }
+      @media (max-width: 480px) {
+        .box {
+          flex-direction: column;
+        }
+        .box img {
+          width: 100%;
+        }
+        .box p {
+          width: 100%;
+        }
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .item {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="../../assets/img/wallpaperbetter.com_1366x768.jpg" alt="" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi tempore
+        natus aliquid quia cum! Fugiat voluptate, facilis, autem eveniet atque
+        vero facere qui natus accusantium asperiores sed esse voluptatem
+        laborum.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 5</div>
+      <div class="item">item 6</div>
+      <div class="item">item 7</div>
+    </div>
+  </body>
+</html>

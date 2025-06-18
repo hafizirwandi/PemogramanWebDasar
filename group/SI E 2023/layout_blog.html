@@ -46,7 +46,7 @@
       .main {
         flex: 10;
         /* background-color: #fff; */
-        height: 80vh;
+        /* height: 80vh; */
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(225, 225, 225, 0.2);
         /* padding: 40px 30px; */
@@ -54,7 +54,7 @@
       .sidebar {
         flex: 4;
         background-color: #fff;
-        height: 80vh;
+        height: 500px;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(225, 225, 225, 0.2);
       }
@@ -119,6 +119,17 @@
       }
       .article-desc {
         text-align: justify;
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .main {
+          flex: 1;
+        }
+        .sidebar {
+          flex: 1;
+        }
       }
     </style>
   </head>
@@ -217,7 +228,7 @@
           </ul>
         </div>
       </div>
-      <div class="sidebar"></div>
+      <div class="sidebar">xx</div>
     </div>
   </body>
 </html>

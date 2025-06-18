@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
       @font-face {
         font-family: "Batman";
         src: url("../../assets/font/batman_forever/batmfa__.ttf");
@@ -15,7 +19,6 @@
       .kotak {
         width: 400px;
         border-radius: 20px;
-        height: 90vh;
         background-color: rgba(202, 143, 67, 0.771);
         margin: auto;
         padding: 20px;
@@ -28,6 +31,15 @@
       .harga {
         text-align: right;
         font-style: italic;
+      }
+      @media (max-width: 420px) {
+        .kotak {
+          width: 100%;
+          margin: 0px;
+        }
+        .judul-menu {
+          font-size: 30pt;
+        }
       }
     </style>
   </head>
